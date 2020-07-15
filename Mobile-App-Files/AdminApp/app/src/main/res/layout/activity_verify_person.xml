@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/DeptRollBatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DriverID"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_ID"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter ID"
+        app:layout_constraintRight_toLeftOf="@+id/search_person"
+        app:layout_constraintTop_toBottomOf="@+id/DeptRollBatch" />
+
+    <Button
+        android:id="@+id/search_person"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        app:layout_constraintLeft_toRightOf="@+id/edit_ID"
+        app:layout_constraintTop_toBottomOf="@+id/DeptRollBatch" />
+    <TextView
+        android:id="@+id/VS_TextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintTop_toBottomOf="@+id/search_person"/>
+    <EditText
+        android:id="@+id/VS_EDT_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/VS_TextName"/>
+    <TextView
+        android:id="@+id/VS_PlateNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plate Number"
+        app:layout_constraintTop_toBottomOf="@id/VS_EDT_Name"/>
+    <EditText
+        android:id="@+id/VS_EDT_PlateNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/VS_PlateNo"/>
+    <TextView
+        android:id="@+id/VS_Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Type"
+        app:layout_constraintTop_toBottomOf="@id/VS_EDT_PlateNo"/>
+    <Spinner
+        android:id="@+id/VS_spin_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/VS_Type">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/VS_TXT_Verif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checking Verification"
+        app:layout_constraintBottom_toTopOf="@+id/VS_BTN_Submit"/>
+    <Button
+        android:id="@+id/VS_BTN_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="VERIFY"/>
+
+</android.support.constraint.ConstraintLayout>
+
