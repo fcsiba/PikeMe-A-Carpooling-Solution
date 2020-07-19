@@ -12,7 +12,7 @@ Driver Account: key: EM-13086/16-17 pw: jari
 Admin Account: email: no id password required
 
 FOR WEB APPLICATION
-Our static website is currently built using elementor page builder & hosted on www.000webhostapp.com at following link:- https://pikme-iba.000webhostapp.com/
+Our static website is currently built on wordpress using elementor page builder plugin & hosted on www.000webhostapp.com at following link:- https://pikme-iba.000webhostapp.com/
 
 FOR MOBILE APPLICATION
 For the framework of our mobile application, we used Java’s, IDE, Android studio. How to Install Android Studio on Windows 10?
