@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maps.MFragment">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/PFrag_map1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".Maps.MapsActivity" />
+
+        <TextView
+            android:id="@+id/PFrag_Price_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            android:text="Price 349Rs"
+            app:layout_constraintBottom_toTopOf="@+id/PFrag_Carpooler4_txt"
+            android:background="@drawable/white_border"/>
+
+
+        <TextView
+            android:id="@+id/PFrag_Carpooler4_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/PFrag_Carpooler3_txt"
+            android:background="@drawable/white_border"/>
+
+
+        <TextView
+            android:id="@+id/PFrag_Carpooler3_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/PFrag_Carpooler2_txt"
+            android:background="@drawable/white_border"/>
+
+
+        <TextView
+            android:id="@+id/PFrag_Carpooler2_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/PFrag_Carpooler1_txt"
+            android:background="@drawable/white_border"/>
+
+
+        <TextView
+            android:id="@+id/PFrag_Carpooler1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@id/PFrag_Driver_ID_txt"
+            android:visibility="invisible"
+            android:background="@drawable/white_border"/>
+
+
+    <TextView
+        android:id="@+id/PFrag_Driver_ID_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/PFrag_Cancel"
+        android:background="@drawable/white_border"/>
+    <Button
+        android:id="@+id/PFrag_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

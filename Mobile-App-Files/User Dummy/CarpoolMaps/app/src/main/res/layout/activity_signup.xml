@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Signup"
+    android:background="@drawable/imgbg2">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/edittextname"
+            android:background="@drawable/white_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Name" />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <EditText
+            android:background="@drawable/white_border"
+            android:id="@+id/edittextemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Email" />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+
+        <EditText
+            android:background="@drawable/white_border"
+            android:id="@+id/edittextpassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Password" />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number" />
+
+        <EditText
+            android:background="@drawable/white_border"
+            android:id="@+id/edittextphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Phone Number" />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/CNIC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CNIC" />
+
+        <EditText
+            android:id="@+id/edittextCNIC"
+            android:layout_width="match_parent"
+            android:background="@drawable/white_border"
+            android:layout_height="match_parent"
+            android:hint="Enter CNIC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/Age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Age" />
+
+            <TextView
+                android:id="@+id/Gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Gender" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edittextage"
+                android:layout_width="0dp"
+                android:background="@drawable/white_border"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:hint="Enter Age" />
+
+            <Spinner
+                android:background="@drawable/white_border"
+                android:id="@+id/spinner_gender"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:entries="@array/Gender" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/Departmemt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department" />
+
+        <Spinner
+            android:id="@+id/spinner_depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/Department"
+            android:background="@drawable/white_border"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/RollNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="RollNo" />
+
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/Batch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Batch" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editRoll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/white_border"
+                android:hint="Enter Roll Number" />
+
+            <Spinner
+                android:background="@drawable/white_border"
+                android:id="@+id/spinner_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:entries="@array/Year"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+    </LinearLayout>
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/textviewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:text="Already Registered \n Click Here To Login"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+</RelativeLayout>
