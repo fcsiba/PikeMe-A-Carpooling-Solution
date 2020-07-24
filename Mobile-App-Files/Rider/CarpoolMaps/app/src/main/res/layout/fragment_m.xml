@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maps.MFragment">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".Maps.MapsActivity" />
+
+
+
+    <fragment
+        android:id="@+id/autocomplete_fragment"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:background = "@drawable/white_border"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf = "@+id/autocomplete_fragment">
+
+        <TextView
+            android:id="@+id/SrcEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_marginHorizontal="5dp"
+            android:hint="Source" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/SrcEdt"
+            android:background="@drawable/white_border"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:hint="Destination"
+            app:layout_constraintTop_toBottomOf = "@+id/SrcEdt"
+            android:id="@+id/DestEdt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To IBA?"
+            android:layout_marginRight="5dp"
+            app:layout_constraintRight_toLeftOf="@+id/RDIOTND"
+            app:layout_constraintTop_toBottomOf="@id/DestEdt"/>
+        <Switch
+            android:id="@+id/RDIOTND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/DestEdt"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/Srch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Route"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/white_border"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="5dp" />
+
+</android.support.constraint.ConstraintLayout>

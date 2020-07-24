@@ -1,0 +1,56 @@
+<resources>
+    <string name="google_maps_api_key">AIzaSyCI7FyDnT2vNVkr1VNsG_wF1i-Pej0elRw</string>
+    <string name="app_name">CarpoolTest1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string-array name="Departments">
+        <item>CS</item>
+        <item>EE</item>
+        <item>ME</item>
+        <item>SE</item>
+        <item>MT</item>
+        <item>CSIT</item>
+    </string-array>
+
+    <string-array name="Year">
+        <item>14-15</item>
+        <item>15-16</item>
+        <item>16-17</item>
+        <item>17-18</item>
+        <item>18-19</item>
+    </string-array>
+    <string-array name="Vehicle_Type">
+        <item>Air Conditioned</item>
+        <item>Non Air Conditioned</item>
+    </string-array>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="Department">
+        <item>Computer Systems Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Textile Engineering</item>
+        <item>Automotive Engineering</item>
+    </string-array>
+</resources>

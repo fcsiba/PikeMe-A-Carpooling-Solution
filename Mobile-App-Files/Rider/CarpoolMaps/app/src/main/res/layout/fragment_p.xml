@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maps.MFragment">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/PFrag_map1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".Maps.MapsActivity" />
+
+
+    <LinearLayout
+        android:id="@+id/PFrag_Carpooler4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/PFrag_Carpooler3"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/PFrag_Carpooler4_cancel_btn"
+        android:text="cancel"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/white_border"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/PFrag_Carpooler4_txt"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:background="@drawable/white_border"
+        android:textAlignment="center"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/PFrag_Carpooler4_pickup_btn"
+        android:text="Picked up"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/white_border"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PFrag_Carpooler3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/PFrag_Carpooler2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/PFrag_Carpooler3_cancel_btn"
+            android:text="cancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/white_border"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/PFrag_Carpooler3_txt"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:background="@drawable/white_border"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/PFrag_Carpooler3_pickup_btn"
+            android:text="Picked up"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/white_border"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PFrag_Carpooler2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/PFrag_Carpooler1"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/PFrag_Carpooler2_cancel_btn"
+        android:text="cancel"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/white_border"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/PFrag_Carpooler2_txt"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAlignment="center"
+        android:background="@drawable/white_border"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/PFrag_Carpooler2_pickup_btn"
+        android:text="Picked up"
+        android:layout_width="0dp"
+        android:background="@drawable/white_border"
+        android:layout_weight="0.2"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PFrag_Carpooler1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/PFrag_Carpooler1_cancel_btn"
+            android:text="cancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/white_border"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/PFrag_Carpooler1_txt"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/white_border"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/PFrag_Carpooler1_pickup_btn"
+            android:text="Picked up"
+            android:background="@drawable/white_border"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
